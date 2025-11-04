@@ -1,0 +1,243 @@
+---
+
+# GitHub Repo Structure
+
+```
+mustang-station-3/
+├── README.md
+├── mkdocs.yml
+├── docs/
+│   ├── preparation.md
+│   ├── body-prep.md
+│   ├── hood.md
+│   ├── fender-extension.md
+│   ├── handwritten-notes/
+│   │   ├── page-1.md
+│   │   ├── page-2.md
+│   │   └── page-3.md
+│   └── images/
+│       ├── image1.jpeg
+│       ├── image2.jpeg
+│       └── ...
+└── .gitignore
+```
+
+---
+
+## `README.md`
+
+```markdown
+# Mustang Station 3 - Paint & Body Prep
+
+> **Model:** Mustang  
+> **Group:** Paint & Body  
+> **Station:** 3  
+> **Purpose:** Strip, clean, prep, and disassemble for paint
+
+---
+
+## Navigation
+
+- [Preparation](docs/preparation.md)
+- [Body Prep](docs/body-prep.md)
+- [Hood](docs/hood.md)
+- [Fender Extension](docs/fender-extension.md)
+- [Handwritten Notes](docs/handwritten-notes/)
+
+---
+
+**Safety First:** Respirator required for 360-4 metal cleaner. Safety glasses for all sanding/grinding.
+```
+
+---
+
+## `mkdocs.yml`
+
+```yaml
+site_name: Mustang Station 3 - Paint & Body Prep
+site_url: https://yourusername.github.io/mustang-station-3
+repo_url: https://github.com/yourusername/mustang-station-3
+theme:
+  name: material
+  palette:
+    primary: red
+    accent: amber
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Preparation: preparation.md
+  - Body Prep: body-prep.md
+  - Hood: hood.md
+  - Fender Extension: fender-extension.md
+  - Handwritten Notes:
+      - Page 1: handwritten-notes/page-1.md
+      - Page 2: handwritten-notes/page-2.md
+      - Page 3: handwritten-notes/page-3.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+```
+
+---
+
+# Station 3 Markdown Files
+
+---
+
+### `docs/preparation.md`
+
+```markdown
+# STATION 3: PREPARATION
+
+## 1. BUILD SHEET REVIEW
+- Review build sheet with **Manager or Team Lead**
+- Confirm:
+  - Billet package
+  - Options list
+  - Color codes
+  - Special instructions
+
+## 2. 360° PHOTO DOCUMENTATION
+- Take **360° photos** of:
+  - Entire vehicle
+  - All gaps
+  - Panel fitment
+  - Parts condition
+- Save to **QC folder** with VIN
+
+## 3. PARTS REMOVAL & STORAGE
+- Remove **all parts not needed for gapping**
+- **Label every part**
+- Use **2 totes**:
+  1. **Hardware tote** – small items, bags, labels
+  2. **Large parts tote** – wrapped in bubble wrap
+- **Notify supervisor** of any **damaged parts**
+
+> **WARNING**: Damaged parts must be reported **before sanding**
+```
+
+---
+
+### `docs/body-prep.md`
+
+```markdown
+# STATION 3: BODY PREP
+
+## 1. REMOVE METAL SHOP MARKINGS
+- Use **lacquer thinner** and **shop towel**
+- Wipe **all markings** around entire car
+- Remove:
+  - Paint pen
+  - Tape residue
+  - Primer overspray
+
+> **TIP**: Work in small sections. Do not let thinner sit on paint.
+
+## 2. FINAL CLEAN
+- Wipe **entire body** with **wax & grease remover**
+- Use **white towels** — change when dirty
+- Ensure **no residue** remains
+```
+
+---
+
+### `docs/hood.md`
+
+```markdown
+# STATION 3: HOOD
+
+## 1. STRIP E-COATING
+- Use **80-grit DA sanding discs**
+- Remove **all e-coating** — leave **bare aluminum**
+
+## 2. CLEAN BARE METAL
+- Apply **360-4 metal cleaner** with **red scuff pad**
+- Wipe with **wax & grease remover**
+- **Respirator required**
+
+> **QC CHECK**: Manager must inspect for **dents or imperfections**
+
+## 3. DISASSEMBLE HOOD
+1. Remove **3 hinge bolts** → place hood on **body panel rack**
+2. Remove **hinges from firewall**
+3. **Wrap hinges** in **bubble wrap**
+4. **Bag all hardware** → place in **hardware tote**
+
+## 4. STRIP HOOD VENTS
+- Remove vents from hood
+- Strip to **bare metal** with **80-grit**
+- Clean with **360-4 + red scuff pad**
+- Final wipe with **wax & grease remover**
+```
+
+---
+
+### `docs/fender-extension.md`
+
+```markdown
+# STATION 3: FENDER EXTENSION
+
+## 1. REMOVE FROM FENDERS
+- Remove **both fender extensions**
+
+## 2. DISASSEMBLE
+- Remove **headlight adjusters** (2 screws each)
+- Remove **3 mounting studs + nuts**
+- **Bag and label all hardware** → place in **hardware tote**
+
+## 3. SANDBLAST
+- Take both extensions to **sandblaster**
+- Blast **front and back**
+- Remove **all e-coating** → **bare aluminum**
+
+> **WARNING**: Full PPE required in blast booth
+```
+
+---
+
+# Handwritten Notes (Transcribed & Cleaned)
+
+---
+
+### `docs/handwritten-notes/page-1.md`
+
+```markdown
+# Handwritten Notes - Page 1
+
+> **Station 3 – Paint Prep**
+
+---
+
+### Hood Stripping & Cleaning
+- Strip **all e-coating** off hood
+- Use **80-grit DA**
+- Clean with **360-4 + red scuff pad**
+- Final wipe **wax & grease remover**
+- **Manager QC** for dents
+
+### Hinges & Vents
+- Remove **3 hinge bolts**
+- Wrap hinges in **bubble wrap**
+- Bag hardware
+- Strip **hood vents** to bare metal
+- Clean same as hood
+
+### Fender Extensions
+- Remove from fenders
+- Remove **adjusters** (2 screws)
+- Remove **3 studs**
+- **Bag & label hardware**
+- **Sandblast both sides** → bare aluminum
+```
+
+---
+
